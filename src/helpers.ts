@@ -1,0 +1,3 @@
+export const toCamelCase = (value: string): string => value.replace(/(-|_)\w/g, (match: string) => match.slice(1,2).toUpperCase()).replace(/^\w/, (match: string) => match.toLowerCase());
+export const toPascalCase = (value: string): string => `${value.slice(0,1).toUpperCase()}${toCamelCase(value.slice(1))}`;
+export const toKebabCase = (value: string): string => `${value.replace(/[A-Z]/g, (match: string, offset: number) => `${offset !== 0 ? "-" : ""}${match.toLowerCase()}`)}`;
