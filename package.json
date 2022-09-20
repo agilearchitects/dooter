@@ -1,5 +1,6 @@
 {
   "name": "@agilearchitects/dooter",
+  "version": "0.1.0",
   "main": "lib/index.js",
   "author": "Agile Architects AB <contact@agilearchitects.se>",
   "license": "MIT",
