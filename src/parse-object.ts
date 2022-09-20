@@ -27,9 +27,9 @@ export class ParseError extends Error {
   }
 }
 
-type simpleType = string | number | boolean | null;
-type jsonDict = { [key: string]: jsonType };
-type jsonType = simpleType | jsonDict | jsonType[];
+export type simpleType = string | number | boolean | null;
+export type jsonDict = { [key: string]: jsonType };
+export type jsonType = simpleType | jsonDict | jsonType[];
 
 
 export const parseObject = (object: jsonType, type: string, schemas: schemas = {}): jsonType => {
